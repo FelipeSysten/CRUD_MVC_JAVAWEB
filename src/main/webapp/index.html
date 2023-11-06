@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Tour</title>
+    <!--Favicton-->
+    <link rel="shortcut icon" href="faciton.PNG" type="image/x-icon">
+    <!--CSS file-->
+    <link rel="stylesheet" href="style.css">
+    <!--Bootstrap 5-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.rtl.min.css">
+    <!--Icone cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css">
+
+        <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- Inclua o link para o Bootstrap via CDN -->
+    <link rel="icon" type="image/x-icon" href="./icon/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<!-- Topbar Start -->
+        <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+            <div class="row gx-0">
+                <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i> Itabuna, Bahia, Brasil</small>
+                        <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i> +55 73 98843-3532</small>
+                        <small class="text-light"><i class="fa fa-envelope-open me-2"></i> systen3@gmail.com</small>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.facebook.com/profile.php?id=100090629080788"><i class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.linkedin.com/in/felipe-souza-746ab8142/"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.instagram.com/liipedesigner/"><i class="fab fa-instagram fw-normal"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+          <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <h1 class="text-primary m-0"><i class="fa fa-map-marker-alt me-3"></i> Explore Tour </h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse me-5" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="#sobre" class="nav-item nav-link">Sobre</a>
+                    <a href="#servico" class="nav-item nav-link">Serviços</a>
+                    <a href="#promocao" class="nav-item nav-link">Promoções</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Destinos</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="#destino" class="dropdown-item">Destino</a>
+                            <a href="#reserva" class="dropdown-item">Reserva</a>
+                            <a href="#guia" class="dropdown-item">Guia de Viagem</a>
+                            <a href="#testemunha" class="dropdown-item">Testemunhos</a>
+                           
+                        </div>
+                    </div>
+                    <a href="#contato" class="nav-item nav-link">Contato</a>
+                </div>
+                <a href="./cadastro.jsp" class="btn btn-primary rounded-pill py-2 px-4">Registrar</a>
+            </div>
+        </nav>
+
+        <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+            <div class="container py-5">
+                <div class="row justify-content-center py-5">
+                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                        <h1 class="display-3 text-white mb-3">
+                            Aproveite sua VIAGEM conosco</h1>
+                        <p class="fs-4 text-white mb-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+                            eos quo! Rerum quaerat at dolores eveniet blanditiis. Optio minus, temporibus explicabo
+                            ipsam quia, ullam atque itaque voluptatum laborum fugiat impedit.</p>
+
+                        <div class="position-relative w-75 mx-auto d-flex">
+                            <!-- input box-->
+                            <input type="text" class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5"
+                                placeholder="Ex: Itacaré">
+                            <!-- botao -->
+                            <button type="button" class="btn btn-primary rounded-pill py-2 px-4 float-end"
+                                style="margin-top: 7px;">Pesquisar</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- ===== sobre nos SECTION =====-->
+
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img src="./about.jpg" alt="" style="object-fit: cover;"
+                            class="img-fluid position-absolute w-100 h-100">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h6 class="section-title bg-white text-primary pe-3" id="sobre">Sobre nós </h6>
+                    <h1 class="mb-4">Bem-vindo ao <span class="text-primary">Explore Tour</span></h1>
+
+                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati consectetur
+                        molestias perspiciatis laboriosam atque ipsa cupiditate, dicta quisquam placeat nostrum amet quo
+                        veniam temporibus necessitatibus. Mollitia earum deleniti accusantium repudiandae!</p>
+                    <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptates
+                        alias vitae ipsam tempora odio repudiandae iste, expedita amet tenetur, eos voluptas numquam!
+                        Veritatis explicabo obcaecati provident reiciendis voluptatibus? Iusto.</p>
+
+                    <div class="row gy-2 gx-4 mb-4">
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i> Voos de primeira classe
+                            </p>
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i> Hotel escolhido a dedo
+                            </p>
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i> As melhores Praias</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i> Comidas Típicas</p>
+                        </div>
+                    </div>
+                    <!-- button-->
+                    <div class="btn btn-primary py-3 px-5 mt-2">Consulte Mais </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- =========== servicos section =================-->
+
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="section-title bg-white text-center text-primary px-3" id="servico">Serviços</h6>
+                <h1 class="mb-5">Outros serviços</h1>
+            </div>
+            <div class="row g-4">
+            
+            
+                <div class="col-lg-3 col-sm-6">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                            <h5>Passeios Mundiais</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facere praesentium, deserunt eius, consectetur esse magnam unde nobis aliquid doloribus quod adipisci.</p>
+                        
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-sm-6">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-hotel text-primary mb-4"></i>
+                            <h5>Reservas de Hotel</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facere praesentium, deserunt eius, consectetur esse magnam unde nobis aliquid doloribus quod adipisci.</p>
+                        
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-sm-6">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-user text-primary mb-4"></i>
+                            <h5>Guias de Viagem</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facere praesentium, deserunt eius, consectetur esse magnam unde nobis aliquid doloribus quod adipisci.</p>
+                        
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-sm-6">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Gestão de Eventos</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facere praesentium, deserunt eius, consectetur esse magnam unde nobis aliquid doloribus quod adipisci.</p>
+                        
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-lg-3 col-sm-6">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                            <h5>Passeios Mundiais</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facere praesentium, deserunt eius, consectetur esse magnam unde nobis aliquid doloribus quod adipisci.</p>
+                        
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-sm-6">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-hotel text-primary mb-4"></i>
+                            <h5>Reservas de Hotel</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facere praesentium, deserunt eius, consectetur esse magnam unde nobis aliquid doloribus quod adipisci.</p>
+                        
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-sm-6">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-user text-primary mb-4"></i>
+                            <h5>Guias de Viagem</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facere praesentium, deserunt eius, consectetur esse magnam unde nobis aliquid doloribus quod adipisci.</p>
+                        
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-sm-6">
+                    <div class="service-item rounded pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-cog text-primary mb-4"></i>
+                            <h5>Gestão de Eventos</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facere praesentium, deserunt eius, consectetur esse magnam unde nobis aliquid doloribus quod adipisci.</p>
+                        
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+    
+  <!--================= destinos seçao ================= -->
+  
+  <div class="container-xxl py-5 destination">
+    <div class="container">
+        <div class="text-center">
+            <h6 class="section-title bg-white text-center text-primary px-3" id="destino">
+                Destinos
+            </h6>
+            <h1 class="mb-5">Destinos Populares</h1>
+        </div>
+        
+        <div class="row g-3">
+            <div class="col-lg-7 col-md-6">
+                <div class="row g-3">
+                
+                    <div class="col-lg-12 col-md-12">
+                        <a href="" class="d-block position-relative overflow-hidden">
+                            <img src="destino1.jpg" alt="" class="img-fluid">
+                            <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">30% OFF</div>
+                            <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2"> Morro de São Paulo</div>
+                        </a>
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-12">
+                        <a href="" class="d-block position-relative overflow-hidden">
+                            <img src="destino2.jpg" alt="" class="img-fluid">
+                            <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">50% OFF</div>
+                            <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2"> Olivença</div>
+                        </a>
+                    </div>
+                    
+                    <div class="col-lg-6 col-md-12">
+                        <a href="" class="d-block position-relative overflow-hidden">
+                            <img src="destino3.jpg" alt="" class="img-fluid">
+                            <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">10% OFF</div>
+                            <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Serra Grande</div>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-5 col-md-6" style="min-height: 350px;">
+            <a href="" class="d-block position-relative h-100 overflow-hidden">
+                <img src="destino4.jpg" alt="" class="img-fluid position-absolute w-100 h-100" style="object-fit: cover ;">
+                <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">20% OFF</div>
+                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2"> Ponta da Tulha</div>
+            </a>
+            </div>
+            
+        </div>
+    </div>
+  </div>
+  
+  <!-- ================Promocoes section ======================== -->
+
+  <div class="container-xxl py-5">
+
+    <div class="container">
+
+        <div class="text-center">
+
+            <h6 class="section-title bg-white text-center text-primary px-3" id="promocao"> Promoções</h6>
+            <h1 class="mb-5">Pacotes Incríveis</h1>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-4 col-md-6">
+
+                <div class="package-item">
+                    <div class="overflow-hidden">
+                        <img src="package1.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="d-flex border-bottom">
+
+                        <small class="flex-fill text-center border-end py-2">
+                            <i class="fa fa-map-marked-alt text-primary me-2"></i> Extremo Sul da Bahia
+                        </small>
+                        <small class="flex-fill text-center border-end py-2">
+                            <i class="fa fa-calendar text-primary me-2"></i> 03 dias
+                        </small>
+                        <small class="flex-fill text-center border-end py-2">
+                            <i class="fa fa-user text-primary me-2"></i> 02 Pessoas
+                        </small>
+                       
+                    </div>
+
+                    <div class="text-center p-4">
+                        <h3 class="mb-0">R$139.00</h3>
+                        <div class="mb-3">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas incidunt quos porro corporis, aliquam commodi eaque maiores vero.</p>
+                        <div class="d-flex justify-content-center mb-2">
+                            <a href="" class="btn btn-sm btn-primary px-3" style="border-radius:  30px 0 0 30px ;">Mais Informação</a>
+                            <a href="" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Agende Agora</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="package-item">
+                    <div class="overflow-hidden">
+                        <img src="package2.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="d-flex border-bottom">
+
+                        <small class="flex-fill text-center border-end py-2">
+                            <i class="fa fa-map-marked-alt text-primary me-2"></i> Extremo Sul da Bahia
+                        </small>
+                        <small class="flex-fill text-center border-end py-2">
+                            <i class="fa fa-calendar text-primary me-2"></i> 03 dias
+                        </small>
+                        <small class="flex-fill text-center border-end py-2">
+                            <i class="fa fa-user text-primary me-2"></i> 02 Pessoas
+                        </small>
+                       
+                    </div>
+
+                    <div class="text-center p-4">
+                        <h3 class="mb-0">R$139.00</h3>
+                        <div class="mb-3">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas incidunt quos porro corporis, aliquam commodi eaque maiores vero.</p>
+                        <div class="d-flex justify-content-center mb-2">
+                            <a href="" class="btn btn-sm btn-primary px-3" style="border-radius:  30px 0 0 30px ;">Mais Informação</a>
+                            <a href="" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Agende Agora</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="package-item">
+                    <div class="overflow-hidden">
+                        <img src="package3.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="d-flex border-bottom">
+
+                        <small class="flex-fill text-center border-end py-2">
+                            <i class="fa fa-map-marked-alt text-primary me-2"></i> Extremo Sul da Bahia
+                        </small>
+                        <small class="flex-fill text-center border-end py-2">
+                            <i class="fa fa-calendar text-primary me-2"></i> 03 dias
+                        </small>
+                        <small class="flex-fill text-center border-end py-2">
+                            <i class="fa fa-user text-primary me-2"></i> 02 Pessoas
+                        </small>
+                       
+                    </div>
+
+                    <div class="text-center p-4">
+                        <h3 class="mb-0">R$139.00</h3>
+                        <div class="mb-3">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas incidunt quos porro corporis, aliquam commodi eaque maiores vero.</p>
+                        <div class="d-flex justify-content-center mb-2">
+                            <a href="" class="btn btn-sm btn-primary px-3" style="border-radius:  30px 0 0 30px ;">Mais Informação</a>
+                            <a href="" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Agende Agora</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+  </div>
+
+ <!--================== Reserva =======================-->
+
+ <div class="container-xxl py-5">
+    <div class="container">
+        <div class="booking p-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-md-6 text-white">
+                    <h6 class="text-write text-uppercase" id="reserva">Reservas</h6>
+                    <h1 class="text-write mb-4">Marcação online</h1>
+                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi fuga adipisci quos, ducimus, nihil possimus soluta asperiores impedit accusamus quam repellat eius, iste odio quisquam totam ab quidem exercitationem vel?</p>
+                    <p class="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos sit corrupti esse praesentium eaque, perspiciatis magnam est mollitia eius dicta quasi! Iusto sint qui, dolor maiores corrupti nisi facere ab!</p>
+                    <a href="" class="btn btn-outline-light py-3 px-5 mt-2">Mais Informações</a>
+                </div>
+                <div class="col-md-6 text-white">
+                    <h1 class="text-write mb-4">Seu Nome</h1>
+                    <form action="">
+                        <div class="row g-3">
+
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control bg-transparent" id="name" placeholder="Seu Nome">
+                                    <label for="name">Seu Nome</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control bg-transparent" id="email" placeholder="Seu Nome">
+                                    <label for="name">Seu Email</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-floating" id="date3">
+                                    <input type="text" class="form-control bg-transparent" id="datetime" placeholder="Seu Nome">
+                                    <label for="datetime">Data e Horário</label>
+                                </div>
+                            </div>
+
+                             <!--select box-->
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <select name="" id="select1" class="form-select bg-transparent">
+                                        <option value="1">Destino 1</option>
+                                        <option value="2">Destino 2</option>
+                                        <option value="3">Destino 3</option>
+                                    </select>
+                                    <label for="select1">Destinos</label>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control bg-transparent" placeholder="Pedido especial" id="message" style="height: 100px;"></textarea>
+                                    <label for="message">Pedido Especial</label>
+                                </div>
+                            </div>
+
+                             <!--buttom-->
+
+                             <div class="col-12">
+                                <button class="btn btn-outline-light w-100 py-3" type="submit">Agende agora</button>
+                             </div>
+
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+ </div>
+
+
+<!--=======================  inicio do processo ============================-->
+
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center pb-4">
+            <h6 class="section-title bg-white text-center text-primary px-3">Processo</h6>
+            <h1 class="mb-5">Passos fáceis</h1>
+        </div>
+
+        <div class="row gy-5 gx-4 justify-content-center">
+
+            <div class="col-lg-4 col-sm-6 text-center pt-4">
+                <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                    <i class="fa fa-dollar-sign fa-3x text-white"></i>
+                    </div>
+                    <h5 class="mt-4">Escolha um destino</h5>
+                    <hr class="w-25 mx-auto bg-primary mt-0">
+
+                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus excepturi officiis sed explicabo totam earum.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 text-center pt-4">
+                <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                    <i class="fa fa-globe fa-3x text-white"></i>
+                    </div>
+                    <h5 class="mt-4">Escolha um destino</h5>
+                    <hr class="w-25 mx-auto bg-primary mt-0">
+
+                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus excepturi officiis sed explicabo totam earum.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 text-center pt-4">
+                <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                    <i class="fa fa-plane fa-3x text-white"></i>
+                    </div>
+                    <h5 class="mt-4">Escolha um destino</h5>
+                    <hr class="w-25 mx-auto bg-primary mt-0">
+
+                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus excepturi officiis sed explicabo totam earum.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--======================== equipe ==========================-->
+
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center">
+            <h6 class="section-title bg-white text-center text-primary px-3" id="guia">Guia de Viagem</h6>
+            <h1 class="mb-5">Conheça nosso guia</h1>
+        </div>
+        <div class="row g-4">
+
+
+            <div class="col-lg-3 col-md-6">
+                <div class="team-item">
+                    <div class="overflow-hidden">
+                        <img src="team.jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                        <a href="" class="btn btn-square mx-1">
+                            <i class="fab fa-facebook-f"></i>
+                        </a> 
+                        <a href="" class="btn btn-square mx-1">
+                            <i class="fab fa-twitter"></i>
+                        </a> 
+                        <a href="https://www.instagram.com/felipetechxp/" class="btn btn-square mx-1">
+                            <i class="fab fa-instagram"></i>
+                        </a> 
+                    </div>
+
+                    <div class="text-center p-4">
+                        <h5 class="mb-0">Arnaldo Alves</h5>
+                        <small>Destino</small>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6">
+                <div class="team-item">
+                    <div class="overflow-hidden">
+                        <img src="team.jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                        <a href="https://www.facebook.com/profile.php?id=100090629080788" class="btn btn-square mx-1">
+                            <i class="fab fa-facebook-f"></i>
+                        </a> 
+                        <a href="" class="btn btn-square mx-1">
+                            <i class="fab fa-twitter"></i>
+                        </a> 
+                        <a href="https://www.instagram.com/felipetechxp/" class="btn btn-square mx-1">
+                            <i class="fab fa-instagram"></i>
+                        </a> 
+                    </div>
+
+                    <div class="text-center p-4">
+                        <h5 class="mb-0">Felipe De Souza</h5>
+                        <small>Destino</small>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="team-item">
+                    <div class="overflow-hidden">
+                        <img src="team.jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                        <a href="https://www.facebook.com/profile.php?id=100090629080788" class="btn btn-square mx-1">
+                            <i class="fab fa-facebook-f"></i>
+                        </a> 
+                        <a href="" class="btn btn-square mx-1">
+                            <i class="fab fa-twitter"></i>
+                        </a> 
+                        <a href="https://www.instagram.com/felipetechxp/" class="btn btn-square mx-1">
+                            <i class="fab fa-instagram"></i>
+                        </a> 
+                    </div>
+
+                    <div class="text-center p-4">
+                        <h5 class="mb-0">André de Souza</h5>
+                        <small>Destino</small>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="team-item">
+                    <div class="overflow-hidden">
+                        <img src="team.jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="position-relative d-flex justify-content-center" style="margin-top: -19px;">
+                        <a href="https://www.facebook.com/profile.php?id=100090629080788" class="btn btn-square mx-1">
+                            <i class="fab fa-facebook-f"></i>
+                        </a> 
+                        <a href="" class="btn btn-square mx-1">
+                            <i class="fab fa-twitter"></i>
+                        </a> 
+                        <a href="https://www.instagram.com/felipetechxp/" class="btn btn-square mx-1">
+                            <i class="fab fa-instagram"></i>
+                        </a> 
+                    </div>
+
+                    <div class="text-center p-4">
+                        <h5 class="mb-0">Diego de Souza</h5>
+                        <small>Destino</small>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!--======================== testemunha section ==========================-->
+
+
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center">
+            <h6 class="section-title bg-white text-center text-primary px-3" id="testemunha">Testemunha</h6>
+            <h1 class="mb-5">Que nossos Clientes Dizem!!</h1>
+        </div>
+
+        <div class="owl-carousel testimonial-carousel position-relative">
+
+            <div class="testimonial-item bg-white text-center border p-4">
+                <img src="testemunha.jpg" alt="" class="bg-white rounded-circle shadow p-1 mx-auto mb-3"  style="width: 80px; height: 80px;">
+                <h5 class="mb-0">Fernanda</h5>
+                <p>Rio de Janeiro, BR</p>
+                <p class="mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+             </div>
+
+             <div class="testimonial-item bg-white text-center border p-4">
+                <img src="testemunha2.jpg" alt="" class="bg-white rounded-circle shadow p-1 mx-auto mb-3"  style="width: 80px; height: 80px;">
+                <h5 class="mb-0">Felipe</h5>
+                <p>Bahia, BR</p>
+                <p class="mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+             </div>
+
+             <div class="testimonial-item bg-white text-center border p-4">
+                <img src="testemunha3.jpg" alt="" class="bg-white rounded-circle shadow p-1 mx-auto mb-3"  style="width: 80px; height: 80px;">
+                <h5 class="mb-0">Evanilto</h5>
+                <p>São Paulo, BR</p>
+                <p class="mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+             </div>
+
+             <div class="testimonial-item bg-white text-center border p-4">
+                <img src="testemunha4.jpg" alt="" class="bg-white rounded-circle shadow p-1 mx-auto mb-3"  style="width: 80px; height: 80px;">
+                <h5 class="mb-0">Fernanda</h5>
+                <p>São Paulo, BR</p>
+                <p class="mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+             </div>
+
+
+
+             
+            </div>
+    </div>
+</div>   
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-light text-center py-3 fixed-bottom">
+       <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">&copy; <a href="" class="border-bottom">Felipe Souza</a> Todos os direitos reservados</div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="" class="">Home</a>
+                            <a href="" class="">Cookies</a>
+                            <a href="" class="">Ajuda</a>
+                            <a href="" class="">FQAs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+    </div>
+    </footer>
+    
+     <!-- JavaScript Libraries -->
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="lib/wow/wow.min.js"></script>
+   <script src="lib/easing/easing.min.js"></script>
+   <script src="lib/waypoints/waypoints.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+   <script src="lib/tempusdominus/js/moment.min.js"></script>
+   <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+   <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!--js file-->
+    <script src="Main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+		crossorigin="anonymous"></script>
+
+    <!-- Inclua os scripts do Bootstrap via CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
